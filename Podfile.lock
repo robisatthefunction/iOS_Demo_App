@@ -1,0 +1,29 @@
+PODS:
+  - OptimizelySDKCore (2.1.0)
+  - OptimizelySDKDatafileManager (2.1.0):
+    - OptimizelySDKShared (= 2.1.0)
+  - OptimizelySDKEventDispatcher (2.1.0):
+    - OptimizelySDKShared (= 2.1.0)
+  - OptimizelySDKiOS (2.1.0):
+    - OptimizelySDKDatafileManager (= 2.1.0)
+    - OptimizelySDKEventDispatcher (= 2.1.0)
+    - OptimizelySDKUserProfileService (= 2.1.0)
+  - OptimizelySDKShared (2.1.0):
+    - OptimizelySDKCore (= 2.1.0)
+  - OptimizelySDKUserProfileService (2.1.0):
+    - OptimizelySDKShared (= 2.1.0)
+
+DEPENDENCIES:
+  - OptimizelySDKiOS
+
+SPEC CHECKSUMS:
+  OptimizelySDKCore: e03962fcf6370cb1a29bccbd0d656f889f37846a
+  OptimizelySDKDatafileManager: 7e768460affb0520baa5bd1ca12fd5749aae78b0
+  OptimizelySDKEventDispatcher: f529a7303bc1c873874dcaed41e348f03075c9c9
+  OptimizelySDKiOS: ffa53f777100a26fe2648d1338d5d8402618a529
+  OptimizelySDKShared: 40dfb3dc9938b81559e1aafc72ab178a40c7b31b
+  OptimizelySDKUserProfileService: c1e32014ac4624e66bb3abd973209f7f173fa027
+
+PODFILE CHECKSUM: 6780ec8770950b79d8ab717690c9dbd986490ca0
+
+COCOAPODS: 1.4.0

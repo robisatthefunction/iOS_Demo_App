@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Demo_App" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7AG-ek-7h0">
+                                <rect key="frame" x="77" y="354" width="244" height="30"/>
+                                <state key="normal" title="isFeatureEnabled without attributes"/>
+                                <connections>
+                                    <action selector="fe_without_attributes:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jtC-Us-50R"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tpZ-eV-X8p">
+                                <rect key="frame" x="97" y="406" width="180" height="30"/>
+                                <state key="normal" title="activate without attributes">
+                                    <color key="titleColor" red="1" green="0.49801443775072352" blue="0.098478485693226703" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXl-wJ-CBl">
+                                <rect key="frame" x="48" y="174" width="256" height="64"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64" id="HlS-l2-4Tv"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Activate with attributes">
+                                    <color key="titleColor" red="1" green="0.34926294549999998" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="myButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hIC-XV-RE2"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" preservesSuperviewLayoutMargins="YES" layoutMarginsFollowReadableWidth="YES" text="pre-activation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPI-AJ-H6q">
+                                <rect key="frame" x="32" y="526" width="289" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="tpZ-eV-X8p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4ui-ws-Xw9"/>
+                            <constraint firstItem="qPI-AJ-H6q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="123" id="JKb-Af-qgk"/>
+                            <constraint firstItem="tpZ-eV-X8p" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="97" id="PkY-Ro-4qg"/>
+                            <constraint firstItem="tpZ-eV-X8p" firstAttribute="top" secondItem="7AG-ek-7h0" secondAttribute="bottom" constant="32" id="TUc-Jg-aiX"/>
+                            <constraint firstItem="tXl-wJ-CBl" firstAttribute="centerX" secondItem="qPI-AJ-H6q" secondAttribute="centerX" id="i4M-nU-Nhi"/>
+                            <constraint firstItem="tXl-wJ-CBl" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="48" id="iUS-WD-zU9"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qPI-AJ-H6q" secondAttribute="bottom" constant="114" id="neE-eg-wRy"/>
+                            <constraint firstItem="7AG-ek-7h0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="sgs-cl-yi7"/>
+                            <constraint firstItem="qPI-AJ-H6q" firstAttribute="top" secondItem="tpZ-eV-X8p" secondAttribute="bottom" constant="96" id="yNT-J1-fLM"/>
+                            <constraint firstItem="tXl-wJ-CBl" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="154" id="ynP-9d-aDv"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="myButtonOutlet" destination="tXl-wJ-CBl" id="ltd-1g-eDH"/>
+                        <outlet property="newLabel" destination="qPI-AJ-H6q" id="N3E-r3-Gp0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="93.103448275862078"/>
+        </scene>
+    </scenes>
+</document>
